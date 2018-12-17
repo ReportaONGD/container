@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
+
+  backend:
+    image: reportaongd/backend:latest
+    depends_on:
+      - mongo
+    volumes:
+      - /my/own/datadir:/var/lib/backend/files
+    ports:
+      - 3000:3000
+    env_file:
+      - backend_env.list
+
+  frontend:
+    image: reportaongd/frontend:latest
+    depends_on:
+      - backend
+    volumes:
+      - /my/own/datadir:/var/lib/frontend/files
+    ports:
+      - 4200:80
+    env_file:
+      - frontend_env.list

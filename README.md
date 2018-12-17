@@ -3,8 +3,11 @@
 
 This container contains a docker-compose.yml with which you start the images of your app and the configuration files
 
-## Run your app via docker-compose
+## Run your app
 
+1.	start
+
+## Via docker-compose
 Example `docker-compose.yml`:
 
 
@@ -86,20 +89,20 @@ All those environment varibles can be overwriten in the file:
 
 ### `CLIENT_ID`
 
-This variable sets the Client Id for the Oauth communication between Gong a Gong-Reporte.
+	This variable sets the Client Id for the Oauth communication between Gong a Gong-Reporte.
 
 ### `CLIENT_SECRET`
 
-This variable sets the Client Password for the Oauth communication between Gong a Gong-Reporte.
+	This variable sets the Client Password for the Oauth communication between Gong a Gong-Reporte.
 
 
 ### `ACCESS_TOKEN_URI`
 
-This variable sets the token for the Oauth communication between Gong a Gong-Reporte.
+	This variable sets the token for the Oauth communication between Gong a Gong-Reporte.
 
 ### `AUTHORIZATION_URI`
 
-This variable sets the authorization for the Oauth communication between Gong a Gong-Reporte.
+	This variable sets the authorization for the Oauth communication between Gong a Gong-Reporte.
 
 # License
 

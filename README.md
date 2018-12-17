@@ -3,11 +3,8 @@
 
 This container contains a docker-compose.yml with which you start the images of your app and the configuration files
 
-## Run your app
+## Run your app via docker-compose
 
-1.	start
-
-## Via docker-compose
 Example `docker-compose.yml`:
 
 

@@ -18,7 +18,7 @@ services:
     volumes:
       - /my/own/datadir:/var/lib/backend/files
     ports:
-      - 3000:3000
+      - 9091:9091
     env_file:
       - backend_env.list
 
@@ -29,6 +29,6 @@ services:
     volumes:
       - /my/own/datadir:/var/lib/frontend/files
     ports:
-      - 4200:80
+      - 9090:9090
     env_file:
       - frontend_env.list
